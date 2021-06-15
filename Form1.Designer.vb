@@ -24,16 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Lbl_SelezionePercorso_AnaSog_Completa = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Lbl_SelezionePercorso_Anagist = New System.Windows.Forms.Label()
+        Me.Lbl_SelezionePercorso_AnaSog_Completa = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.Grp_LogElaborazioni = New System.Windows.Forms.GroupBox()
         Me.Lbl_Elaborazioni = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Grp_LogElaborazioni.SuspendLayout()
         Me.SuspendLayout()
@@ -54,15 +54,49 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Selezione archivi"
         '
-        'Button1
+        'Button3
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(62, 293)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(365, 75)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Avvia processo di correzione"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button3.Location = New System.Drawing.Point(1013, 175)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(50, 27)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = ". . ."
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(1014, 62)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(50, 27)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = ". . ."
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(7, 175)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(1000, 26)
+        Me.TextBox2.TabIndex = 1
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(7, 62)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(1000, 26)
+        Me.TextBox1.TabIndex = 1
+        '
+        'Lbl_SelezionePercorso_Anagist
+        '
+        Me.Lbl_SelezionePercorso_Anagist.AutoSize = True
+        Me.Lbl_SelezionePercorso_Anagist.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Lbl_SelezionePercorso_Anagist.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Lbl_SelezionePercorso_Anagist.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_SelezionePercorso_Anagist.Location = New System.Drawing.Point(6, 147)
+        Me.Lbl_SelezionePercorso_Anagist.Name = "Lbl_SelezionePercorso_Anagist"
+        Me.Lbl_SelezionePercorso_Anagist.Size = New System.Drawing.Size(263, 22)
+        Me.Lbl_SelezionePercorso_Anagist.TabIndex = 0
+        Me.Lbl_SelezionePercorso_Anagist.Text = "Seleziona archivio di tipo: Anagist"
         '
         'Lbl_SelezionePercorso_AnaSog_Completa
         '
@@ -76,17 +110,15 @@ Partial Class Form1
         Me.Lbl_SelezionePercorso_AnaSog_Completa.TabIndex = 0
         Me.Lbl_SelezionePercorso_AnaSog_Completa.Text = "Seleziona archivio di tipo: AnaSog_Completa"
         '
-        'Lbl_SelezionePercorso_Anagist
+        'Button1
         '
-        Me.Lbl_SelezionePercorso_Anagist.AutoSize = True
-        Me.Lbl_SelezionePercorso_Anagist.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Lbl_SelezionePercorso_Anagist.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Lbl_SelezionePercorso_Anagist.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_SelezionePercorso_Anagist.Location = New System.Drawing.Point(6, 147)
-        Me.Lbl_SelezionePercorso_Anagist.Name = "Lbl_SelezionePercorso_Anagist"
-        Me.Lbl_SelezionePercorso_Anagist.Size = New System.Drawing.Size(345, 22)
-        Me.Lbl_SelezionePercorso_Anagist.TabIndex = 0
-        Me.Lbl_SelezionePercorso_Anagist.Text = "Seleziona archivio di tipo: AnaSog_Completa"
+        Me.Button1.Font = New System.Drawing.Font("Arial Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(62, 293)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(365, 75)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Avvia processo di correzione"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'NotifyIcon1
         '
@@ -114,38 +146,6 @@ Partial Class Form1
         Me.Lbl_Elaborazioni.Size = New System.Drawing.Size(22, 20)
         Me.Lbl_Elaborazioni.TabIndex = 0
         Me.Lbl_Elaborazioni.Text = "..."
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(7, 62)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1000, 26)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(7, 175)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(1000, 26)
-        Me.TextBox2.TabIndex = 1
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(1014, 62)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(50, 27)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = ". . ."
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(1013, 175)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(50, 27)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = ". . ."
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
