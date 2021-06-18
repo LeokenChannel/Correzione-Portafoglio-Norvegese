@@ -109,6 +109,7 @@ Public Class Form1
 
         Dim stringReader As String = ""
 
+        'Campi presenti nell'XML
         Dim CFoPIVA As String = ""
         Dim NoLuogoNascita As String = ""
         Dim NoSedeLegale As String = ""
